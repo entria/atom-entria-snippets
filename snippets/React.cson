@@ -99,7 +99,7 @@
               };
             },
             """
-            
+
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: getInitialState() { return {...} }":
     "prefix": "gis"
@@ -115,3 +115,111 @@
   "React: isMounted()":
     "prefix": "ism"
     "body": "isMounted()"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Class.contextTypes = { ... }":
+    "prefix": "cct"
+    "body": """
+            ${1}.contextTypes = {
+              ${2}: PropTypes.${3:string}
+            };
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Class.propTypes = { ... }":
+    "prefix": "cpt"
+    "body": """
+            ${1}.propTypes = {
+              ${2}: PropTypes.${3:string}
+            };
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Class.defaultProps = { ... }":
+    "prefix": "cdp"
+    "body": """
+            ${1}.defaultProps = {
+              ${2}: ${3}
+            };
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: static contextTypes = { ... }":
+    "prefix": "scct"
+    "body": """
+            static contextTypes = {
+              ${1}: PropTypes.${2:string}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: static propTypes = { ... }":
+    "prefix": "scpt"
+    "body": """
+            static propTypes = {
+              ${1}: PropTypes.${2:string}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: static defaultProps = { ... }":
+    "prefix": "scdp"
+    "body": """
+            static defaultProps = {
+              ${1}: ${2}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: propTypes { ... }":
+    "prefix": "pt"
+    "body": """
+            propTypes: {
+              ${1}: PropTypes.${2:string}
+            },
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Class Skeleton":
+    "prefix": "cer"
+    "body": """
+            import React, { Component } from 'react';
+
+            class ${1} extends Component {
+              render() {
+                return (
+                  ${2:<div></div>}
+                );
+              }
+            }
+
+            export default ${1};
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: createClass Skeleton":
+    "prefix": "rcc"
+    "body": """
+            import React from 'react';
+            export default React.createClass({
+              render() {
+                return (
+                  ${1:<div></div>}
+                );
+              }
+            });
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Component":
+    "prefix": "rsc"
+    "body": """
+            import React from 'react';
+            export default React.createClass({
+              render() {
+                return (
+                  ${1:<div></div>}
+                );
+              }
+            });
+            """
