@@ -1,0 +1,11 @@
+{
+  "name": "react-native-snippets",
+  "version": "0.0.1",
+  "description": "Atom Snippets for React, React Router, Flux, GraphQL and Relay",
+  "repository": "git@github.com:entria/atom-entria-snippets.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>"
+}
