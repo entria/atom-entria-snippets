@@ -1,0 +1,13 @@
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "GraphQL: create connection":
+    "prefix": "gcn"
+    "body": """
+            import { connectionDefinitions } from 'graphql-relay';
+
+            import ${1} from '../type/${1}';
+
+            export default connectionDefinitions({
+              name: '${2}',
+              nodeType: ${1},
+            });
+            """
