@@ -1,13 +1,27 @@
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "Styled Components: import styled-components":
-    "prefix": "imsc"
+    "prefix": "sci"
     "body": """
             import styled from 'styled-components';
             """
 
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "Styled Components: import styled-components/native":
-    "prefix": "imscn"
+    "prefix": "scni"
     "body": """
             import styled from 'styled-components/native';
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "Styled Components: styled component":
+    "prefix": "sc"
+    "body": """
+            const ${1:ComponentName} = styled.${2:div}`
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "Styled Components: styled component export":
+    "prefix": "esc"
+    "body": """
+            export const ${1:ComponentName} = styled.${2:div}`
             """
