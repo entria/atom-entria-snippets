@@ -67,10 +67,19 @@
             """
 
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
-  "React: componentWillUpdate(np, ns) { ... }":
+  "React: componentWillUpdate(nextProps, nextState) { ... }":
     "prefix": "cwu"
     "body": """
             componentWillUpdate(nextProps, nextState) {
+              ${1}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: shouldComponentUpdate(nextProps, nextState) { ... }":
+    "prefix": "scu"
+    "body": """
+            shouldComponentUpdate(nextProps, nextState) {
               ${1}
             }
             """
@@ -263,4 +272,97 @@
             };
 
             export default ${1};
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Component PropTypes":
+    "prefix": "rscp"
+    "body": """
+            import React from 'react';
+            import PropTypes from 'prop-types';
+
+            const ${1} = ({${2}}) => <div>${4}</div>;
+
+            ${1}.propTypes = {
+              ${2}: PropTypes.${3}
+            };
+
+            export default ${1};
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Function":
+    "prefix": "rsf"
+    "body": """
+            const ${1} = ({${2}}) => <div>{${2}}</div>;
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Function":
+    "prefix": "rsf"
+    "body": "const ${1} = ({${2}}) => <div>{${2}}</div>;"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Component displayName":
+    "prefix": "cdn"
+    "body": "${1}.displayName = '${1}';"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: render() { return ... }":
+    "prefix": "ren"
+    "body": """
+            render() {
+              return ${1:<div></div>};
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: setState({ ... })":
+    "prefix": "sst"
+    "body": """
+            this.setState({
+              ${1}: ${2}
+            });
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: this.props.":
+    "prefix": "props"
+    "body": "this.props.${1}"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: this.state.":
+    "prefix": "state"
+    "body": "this.state.${1}"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: render(component, container, [callback])":
+    "prefix": "rrc"
+    "body": """
+            React.render(
+              ${1:<$2 />},
+              ${3:document.body}${4:, ${5:callback}}
+            );
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: constructor(props)":
+    "prefix": "cns"
+    "body": """
+            constructor(props) {
+              super(props);
+              this.state = {
+                ${1},
+              }
+            }
+            """
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: class Foo extends Bar":
+    "prefix": "clss"
+    "body": """
+            class ${1:Foo} extends ${2:React.Component} {
+              render() {
+                ${3}
+              }
+            }
             """
