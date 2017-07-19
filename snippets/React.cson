@@ -272,6 +272,26 @@
     "prefix": "rsf"
     "body": "const ${1} = ({${2}}) => <div>{${2}}</div>;"
 
+
+  "React: Pure Component":
+    "prefix": "rpc"
+    "body": """
+    import React, { PureComponent } from 'react';
+    import PropTypes from 'prop-types';
+
+    class ${1} extends PureComponent {
+      render() {
+        return ${2:<div></div>}
+      }
+    }
+
+    ${1}.propTypes = {
+      ${3}: PropTypes.${4},
+    }
+
+    export default ${1}
+    """
+
   "React: Component displayName":
     "prefix": "cdn"
     "body": "${1}.displayName = '${1}';"
