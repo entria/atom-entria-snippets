@@ -29,3 +29,57 @@
               ${1}
             }
             """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentDidUpdate(prevProps, prevState) { ... }":
+    "prefix": "cdup"
+    "body": """
+            componentDidUpdate(prevProps, prevState) {
+              ${1}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentWillMount() { ... }":
+    "prefix": "cwm"
+    "body": """
+            componentWillMount() {
+              ${1}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentWillReceiveProps(nextProps) { ... }":
+    "prefix": "cwr"
+    "body": """
+            componentWillReceiveProps(nextProps) {
+              ${1}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentWillUnmount() { ... }":
+    "prefix": "cwun"
+    "body": """
+            componentWillUnmount() {
+              ${1}
+            }
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentWillUpdate(np, ns) { ... }":
+    "prefix": "cwu"
+    "body": """
+            componentWillUpdate(nextProps, nextState) {
+              ${1}
+            }
+            """
+            
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentWillUpdate(np, ns) { ... }":
+    "prefix": "cwu"
+    "body": """
+            componentWillUpdate(nextProps, nextState) {
+              ${1}
+            }
+            """
