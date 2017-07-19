@@ -1,0 +1,17 @@
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: import empty()":
+    "prefix": "i"
+    "body": "import ${1} from '${1}';"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: import()":
+    "prefix": "ir"
+    "body": "import React from 'react';"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: import() with PropTypes":
+    "prefix": "ir"
+    "body": """
+            import React from 'react';
+            import PropTypes from 'prop-types';
+            """
