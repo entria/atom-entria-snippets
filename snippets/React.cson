@@ -74,12 +74,44 @@
               ${1}
             }
             """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: cx({ ... })":
+    "prefix": "cx"
+    "body": """
+            cx({
+              $1: $2,
+            });
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: forceUpdate(...)":
+    "prefix": "fup"
+    "body": "forceUpdate(${1:callback});"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: getDefaultProps() { return {...} }":
+    "prefix": "gdp"
+    "body": """
+            getDefaultProps() {
+              return {
+                ${1}
+              };
+            },
+            """
             
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
-  "React: componentWillUpdate(np, ns) { ... }":
-    "prefix": "cwu"
+  "React: getInitialState() { return {...} }":
+    "prefix": "gis"
     "body": """
-            componentWillUpdate(nextProps, nextState) {
-              ${1}
-            }
+            getInitialState() {
+              return {
+                ${1}: ${2}
+              };
+            },
             """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: isMounted()":
+    "prefix": "ism"
+    "body": "isMounted()"
