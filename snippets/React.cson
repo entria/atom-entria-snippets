@@ -215,11 +215,52 @@
     "prefix": "rsc"
     "body": """
             import React from 'react';
-            export default React.createClass({
-              render() {
-                return (
-                  ${1:<div></div>}
-                );
-              }
-            });
+            import PropTypes from 'prop-types';
+
+            const ${1} = ({${2}}) => <div>${4}</div>;
+
+
+            ${1}.propTypes = {
+              ${2}: PropTypes.${3}
+            };
+
+            export default ${1};
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Component Return":
+    "prefix": "rscr"
+    "body": """
+            import React from 'react';
+            import PropTypes from 'prop-types';
+
+            const ${1} = ({${2}}) => {
+              return <div>${4}</div>
+            }
+
+            ${1}.propTypes = {
+              ${2}: PropTypes.${3}
+            };
+
+            export default ${1};
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: Stateless Component Click":
+    "prefix": "rscc"
+    "body": """
+            import React from 'react';
+            import PropTypes from 'prop-types';
+
+            const ${1} = ({${2}}) => {
+              const handleClick = () => {};
+
+              return <div onClick={handleClick}>${4}</div>;
+            }
+
+            ${1}.propTypes = {
+              ${2}: PropTypes.${3}
+            };
+
+            export default ${1};
             """
