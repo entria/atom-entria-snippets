@@ -3,7 +3,7 @@
     "prefix": "gct"
     "body": """
             import { GraphQLString } from 'graphql';
-            import { globalIdField, connectionArgs, connectionDefinitions, fromGlobalId } from 'graphql-relay';
+            import { globalIdField, fromGlobalId } from 'graphql-relay';
 
             const ${1} = new GraphQLObjectType({
               name: '${2}',
