@@ -1,7 +1,7 @@
 {
   "name": "react-native-snippets",
-  "version": "0.0.1",
-  "description": "Atom Snippets for React, React Router, Flux, GraphQL and Relay",
+  "version": "0.0.2",
+  "description": "Atom Snippets for React, React Router, Redux, GraphQL and Relay",
   "repository": "git@github.com:entria/atom-entria-snippets.git",
   "license": "MIT",
   "engines": {
