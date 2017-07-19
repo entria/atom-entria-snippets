@@ -3,12 +3,10 @@
     "prefix": "i"
     "body": "import ${1} from '${1}';"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: import()":
     "prefix": "ir"
     "body": "import React from 'react';"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: import() with PropTypes":
     "prefix": "irp"
     "body": """
@@ -16,12 +14,10 @@
             import PropTypes from 'prop-types';
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: import react-dom()":
     "prefix": "ird"
     "body": "import ReactDOM from 'react-dom';"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentDidMount() { ... }":
     "prefix": "cdm"
     "body": """
@@ -30,7 +26,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentDidUpdate(prevProps, prevState) { ... }":
     "prefix": "cdup"
     "body": """
@@ -39,7 +34,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentWillMount() { ... }":
     "prefix": "cwm"
     "body": """
@@ -48,7 +42,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentWillReceiveProps(nextProps) { ... }":
     "prefix": "cwr"
     "body": """
@@ -57,7 +50,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentWillUnmount() { ... }":
     "prefix": "cwun"
     "body": """
@@ -66,7 +58,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: componentWillUpdate(nextProps, nextState) { ... }":
     "prefix": "cwu"
     "body": """
@@ -75,7 +66,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: shouldComponentUpdate(nextProps, nextState) { ... }":
     "prefix": "scu"
     "body": """
@@ -84,7 +74,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: cx({ ... })":
     "prefix": "cx"
     "body": """
@@ -93,12 +82,10 @@
             });
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: forceUpdate(...)":
     "prefix": "fup"
     "body": "forceUpdate(${1:callback});"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: getDefaultProps() { return {...} }":
     "prefix": "gdp"
     "body": """
@@ -109,7 +96,6 @@
             },
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: getInitialState() { return {...} }":
     "prefix": "gis"
     "body": """
@@ -120,12 +106,10 @@
             },
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: isMounted()":
     "prefix": "ism"
     "body": "isMounted()"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Class.contextTypes = { ... }":
     "prefix": "cct"
     "body": """
@@ -134,7 +118,6 @@
             };
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Class.propTypes = { ... }":
     "prefix": "cpt"
     "body": """
@@ -143,7 +126,6 @@
             };
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Class.defaultProps = { ... }":
     "prefix": "cdp"
     "body": """
@@ -152,7 +134,6 @@
             };
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: static contextTypes = { ... }":
     "prefix": "scct"
     "body": """
@@ -161,7 +142,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: static propTypes = { ... }":
     "prefix": "scpt"
     "body": """
@@ -170,7 +150,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: static defaultProps = { ... }":
     "prefix": "scdp"
     "body": """
@@ -179,7 +158,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: propTypes { ... }":
     "prefix": "pt"
     "body": """
@@ -188,7 +166,6 @@
             },
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Class Skeleton":
     "prefix": "cer"
     "body": """
@@ -205,7 +182,6 @@
             export default ${1};
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: createClass Skeleton":
     "prefix": "rcc"
     "body": """
@@ -219,7 +195,6 @@
             });
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Component":
     "prefix": "rsc"
     "body": """
@@ -236,7 +211,6 @@
             export default ${1};
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Component Return":
     "prefix": "rscr"
     "body": """
@@ -254,7 +228,6 @@
             export default ${1};
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Component Click":
     "prefix": "rscc"
     "body": """
@@ -274,7 +247,6 @@
             export default ${1};
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Component PropTypes":
     "prefix": "rscp"
     "body": """
@@ -290,24 +262,20 @@
             export default ${1};
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Function":
     "prefix": "rsf"
     "body": """
             const ${1} = ({${2}}) => <div>{${2}}</div>;
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Stateless Function":
     "prefix": "rsf"
     "body": "const ${1} = ({${2}}) => <div>{${2}}</div>;"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: Component displayName":
     "prefix": "cdn"
     "body": "${1}.displayName = '${1}';"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: render() { return ... }":
     "prefix": "ren"
     "body": """
@@ -316,7 +284,6 @@
             }
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: setState({ ... })":
     "prefix": "sst"
     "body": """
@@ -325,17 +292,14 @@
             });
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: this.props.":
     "prefix": "props"
     "body": "this.props.${1}"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: this.state.":
     "prefix": "state"
     "body": "this.state.${1}"
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: render(component, container, [callback])":
     "prefix": "rrc"
     "body": """
@@ -345,7 +309,6 @@
             );
             """
 
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: constructor(props)":
     "prefix": "cns"
     "body": """
@@ -356,7 +319,7 @@
               }
             }
             """
-".source.js, .source.jsx, .source.ts, .source.js-semantic":
+
   "React: class Foo extends Bar":
     "prefix": "clss"
     "body": """
