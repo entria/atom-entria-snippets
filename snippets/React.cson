@@ -20,3 +20,12 @@
   "React: import react-dom()":
     "prefix": "ird"
     "body": "import ReactDOM from 'react-dom';"
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: componentDidMount() { ... }":
+    "prefix": "cdm"
+    "body": """
+            componentDidMount() {
+              ${1}
+            }
+            """
