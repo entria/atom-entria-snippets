@@ -1,4 +1,21 @@
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "GraphQL: create type":
+    "prefix": "gct"
+    "body": """
+            import { GraphQLString } from 'graphql';
+            import { globalIdField, connectionArgs, connectionDefinitions, fromGlobalId } from 'graphql-relay';
+
+            const ${1} = new GraphQLObjectType({
+              name: '${2}',
+              description: '${3}',
+              fields: () => ({
+                id: globalIdField('${2}'),
+                ${4}: {
+                  type: GraphQLString,
+                  resolve: ${5} => ${5}.${4},
+                },
+            """
+
   "GraphQL: create connection":
     "prefix": "gcn"
     "body": """
