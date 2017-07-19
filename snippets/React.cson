@@ -10,8 +10,13 @@
 
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "React: import() with PropTypes":
-    "prefix": "ir"
+    "prefix": "irp"
     "body": """
             import React from 'react';
             import PropTypes from 'prop-types';
             """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "React: import react-dom()":
+    "prefix": "ird"
+    "body": "import ReactDOM from 'react-dom';"
