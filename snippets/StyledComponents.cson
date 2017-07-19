@@ -1,0 +1,13 @@
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "Styled Components: import styled-components":
+    "prefix": "imsc"
+    "body": """
+            import styled from 'styled-components';
+            """
+
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "Styled Components: import styled-components/native":
+    "prefix": "imscn"
+    "body": """
+            import styled from 'styled-components/native';
+            """
