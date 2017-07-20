@@ -1,6 +1,6 @@
 {
   "name": "entria-snippets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Atom Snippets for React, React Router, Redux, GraphQL and Relay",
   "repository": "https://github.com/entria/atom-entria-snippets",
   "license": "MIT",
