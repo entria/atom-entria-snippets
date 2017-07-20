@@ -1,11 +1,11 @@
 {
-  "name": "atom-entria-snippets",
-  "version": "0.1.0",
+  "name": "entria-snippets",
+  "version": "0.0.3",
   "description": "Atom Snippets for React, React Router, Redux, GraphQL and Relay",
-  "repository": "git@github.com:entria/atom-entria-snippets.git",
+  "repository": "https://github.com/entria/atom-entria-snippets",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>"
 }
