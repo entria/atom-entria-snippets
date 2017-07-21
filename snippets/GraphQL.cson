@@ -1,5 +1,5 @@
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
-  "GraphQL: create type":
+  "GraphQL: Type":
     "prefix": "gct"
     "body": """
             import { GraphQLString } from 'graphql';
@@ -16,7 +16,7 @@
                 },
             """
 
-  "GraphQL: create connection":
+  "GraphQL: Connection":
     "prefix": "gcn"
     "body": """
             import { connectionDefinitions } from 'graphql-relay';
@@ -27,4 +27,12 @@
               name: '${2}',
               nodeType: ${1},
             });
+            """
+
+  "GraphQL: viewerCanSee":
+    "prefix": "vcs"
+    "body": """
+            const viewerCanSee = (context: GraphQLContext, data: ${1:MyType}): boolean => {
+              return true;
+            };
             """
