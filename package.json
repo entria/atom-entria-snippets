@@ -1,11 +1,37 @@
 {
   "name": "entria-snippets",
-  "version": "0.0.4",
   "description": "Atom Snippets for React, React Router, Redux, GraphQL and Relay",
-  "repository": "https://github.com/entria/atom-entria-snippets",
-  "license": "MIT",
+  "version": "0.0.4",
+  "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/entria/atom-entria-snippets/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-lintspaces": "^0.3.0"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>"
+  "homepage": "https://github.com/entria/atom-entria-snippets",
+  "keywords": [
+    "ES6",
+    "ES7",
+    "ES8",
+    "babel",
+    "flow",
+    "graphql",
+    "react",
+    "react-native",
+    "redux",
+    "relay",
+    "snippets",
+    "styled-components"
+  ],
+  "license": "MIT",
+  "main": "./lib/entria-snippets",
+  "repository": "https://github.com/entria/atom-entria-snippets",
+  "scripts": {
+    "test": "gulp"
+  }
 }
