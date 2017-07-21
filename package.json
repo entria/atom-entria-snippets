@@ -1,7 +1,7 @@
 {
   "name": "entria-snippets",
   "description": "Atom Snippets for React, React Router, Redux, GraphQL and Relay",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>",
   "bugs": {
     "url": "https://github.com/entria/atom-entria-snippets/issues"
